@@ -15,7 +15,7 @@ sudo nano /etc/apt/sources.list.d/focal-security.list
 ```
 deb http://security.ubuntu.com/ubuntu focal-security main universe
 ```
-3. run the following commands
+3. Run the following commands
 ```
 sudo apt-get update
 sudo apt-get install libncurses5
@@ -29,10 +29,10 @@ cd FINDUS
 
 # Real-world Benchmarks
 Real-world benchmarks are located at  ```FINDUAS_artifact/FINDUS/Benchmarks/Real_world```.
-Due to lot of header dependencies for the ease of evaluation we have only provided the ll files generated form the source code.
+Due to many header dependencies for the ease of evaluation, we have only provided the .ll files generated from the source code.
 
 # Synthetic Benchmarks Evaluation
-./synthetic_eval.sh'
+./synthetic_eval.sh
 
 # Running FINDUAS
 ```
@@ -41,7 +41,7 @@ cd Release-build
 
 ./bin/findus -add-td-edge=2 <path to input .ll file>
 
-eg
+e.g.,
 ```
 ./bin/findus -add-td-edge=2  ../Benchmarks/Real_world/android_bionic/setjmp_test_lambda_removed_assert_removed.ll
 
