@@ -28,7 +28,7 @@ cd FINDUS
 ```
 
 # Real-world Benchmarks
-Real-world benchmarks are located at  ```FINDUAS_artifact/FINDUS/Benchmarks/Real_world```.
+Real-world benchmarks are located at  ```FINDUS_Artifact/FINDUS/Benchmarks/Real_world```.
 Due to many header dependencies, we have provided the .ll files generated from the source code for ease of evaluation.
 
 # Synthetic Benchmarks Evaluation
