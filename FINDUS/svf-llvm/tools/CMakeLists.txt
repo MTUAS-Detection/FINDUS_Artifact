@@ -1,0 +1,25 @@
+add_subdirectory(SABER)
+add_subdirectory(WPA)
+add_subdirectory(
+  "${CMAKE_CURRENT_SOURCE_DIR}/../../FINDUS"   # source (out-of-tree)
+  "${CMAKE_CURRENT_BINARY_DIR}/FINDUS"         # binary dir (inside build/)
+)
+add_subdirectory(DDA)
+add_subdirectory(MTA)
+add_subdirectory(CFL)
+add_subdirectory(LLVM2SVF)
+add_subdirectory(AE)
+add_subdirectory(SSA)
+set_target_properties(
+    cfl dvf  llvm2svf mta saber wpa ae findus ssa
+    PROPERTIES
+        RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
+)
+
+install(
+    TARGETS cfl dvf llvm2svf mta saber wpa ae ssa
+    EXPORT SVFTargets
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+)
