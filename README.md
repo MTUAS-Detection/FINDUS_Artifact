@@ -1,4 +1,4 @@
-# FINDUAS_artifact
+# FINDUS_artifact
 
 # Dependencies
 ```
